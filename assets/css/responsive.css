@@ -1,0 +1,312 @@
+/* PC */
+@media (min-width: 1023px) {
+    .nav__mobile {
+        display: none;
+    }
+}
+
+/* Mobile & Tablet*/
+@media (max-width: 1023px) {
+    .header__navbar {
+        padding: 0;
+    }
+
+    .burger {
+        display: block;
+        cursor: pointer;
+    }
+
+    .burger div {
+        width: 22px;
+        height: 1px;
+        background-color: var(--header-color);
+        margin: 6px 20px;
+        transition: all 0.3s ease;
+    }
+
+    .modal-menu {
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        background-color: rgba(0, 0, 0, 0.4);
+        transition: all 0.2s ease;
+        z-index: 1042;
+        display: none;
+    }
+
+    .modal-menu.active {
+        display: block;
+    }
+
+    .modal-menu.active .header__menu-close {
+        opacity: 0.5;
+    }
+
+    .modal-menu.active .header__menu-close:hover {
+        opacity: 1;
+    }
+
+    .header__menu-close {
+        position: fixed;
+        right: 0;
+        top: 0;
+        opacity: 0;
+        padding: 20px;
+        cursor: pointer;
+        animation: closeFadeIn ease 0.4s;
+        z-index: 1046;
+    }
+
+    @keyframes closeFadeIn {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 0.5;
+        }
+    }
+
+    .header__menu-close {
+        display: block;
+    }
+
+    .header__menu-close .burger-close {
+        font-size: 26px;
+        color: #fff;
+    }
+
+    .header__menu {
+        height: 100%;
+        width: 260px;
+        animation: modalFadeInLeft ease 0.4s;
+    }
+
+    @keyframes modalFadeInLeft {
+        from {
+            opacity: 0;
+            transform: translateX(-260px);
+        }
+        to {
+            opacity: 1;
+            transform: translateX(0);
+        }
+    }
+
+    .header__menu-list {
+        position: fixed;
+        display: flex;
+        flex-direction: column;
+        width: 260px;
+        height: 100%;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        margin-left: 0;
+        background-color: #f8f8f8;
+        padding: 30px 0;
+    }
+
+    .header__menu-item {
+        border-bottom: 1px solid #ececec;
+        transition: background-color 0.3s;
+    }
+
+    .header__menu-item:last-child {
+        border-bottom: none;
+    }
+
+    .header__menu-list > .header__menu-item:hover {
+        background-color: rgba(0, 0, 0, 0.05);
+    }
+
+    .header__menu-link {
+        padding: 15px 0 15px 20px;
+        font-size: 14px;
+        font-weight: 500;
+        color: rgba(102, 102, 102, 0.85);
+    }
+
+    .header__menu-list > .header__menu-item > .header__menu-link:hover {
+        color: rgba(17, 17, 17, 0.85);
+    }
+
+    /* Service */
+    .section-service {
+        margin: 0 20px;
+    }
+
+    .service-heading {
+        margin-bottom: 40px;
+    }
+
+    .service-text {
+        padding: 12px 0;
+    }
+
+    .service-text__title {
+        line-height: 19px;
+    }
+
+    /* Tin Tức */
+    .swiper-navBtn {
+        display: none;
+    }
+
+    /* Content */
+    .content-left {
+        margin-left: 0;
+    }
+    /* Image action */
+
+    /* Footer */
+    .footer-list {
+        overflow: hidden;
+    }
+
+    .footer-list.show {
+        display: block;
+    }
+
+    .footer-item-link {
+        display: block;
+        padding: 10px 15px;
+        line-height: 20px;
+    }
+}
+
+/* Tablet */
+@media (min-width: 740px) and (max-width: 1023px) {
+    /* Header - Tablet*/
+    .header__logo {
+        margin-left: 115px;
+    }
+
+    .header__phone {
+        margin-right: 20px;
+    }
+
+    /* Service - Tablet*/
+    .service-list {
+        padding: 0 10px;
+    }
+
+    .service-img {
+        height: 130px;
+    }
+
+    /* About - Tablet*/
+    .about-content {
+        padding: 0 30px 30px 0;
+    }
+
+    .about-img {
+    }
+
+    .about-img > img {
+        height: 505px;
+        object-fit: cover;
+    }
+
+    /* Tin Tức - Tablet*/
+
+    /* Footer - Tablet*/
+    .footer__upper {
+        margin: 0 30px;
+        padding-bottom: 0;
+    }
+
+    .networks {
+        justify-content: flex-start;
+        margin-bottom: 10px;
+    }
+
+    .footer-map {
+        width: 220px;
+        height: 200px;
+    }
+}
+
+/* Mobile */
+@media (max-width: 739px) {
+    /* Header - Mobile*/
+    .header__logo-img {
+        width: 200px;
+    }
+    .header__phone {
+        margin-right: 10px;
+    }
+
+    .header__phone-link > span {
+        display: none;
+    }
+
+    /* Slider Btn - Mobile*/
+    .swiper-button-prev {
+        left: 10px;
+    }
+
+    .swiper-button-next {
+        right: 10px;
+    }
+
+    /* Services - Mobile */
+    .service-list {
+        padding: 0;
+    }
+
+    /* About - Mobile*/
+    .about-content {
+        padding: 0 20px 50px;
+    }
+    .about-content__btn {
+        padding: 16px 10px;
+    }
+
+    .about-img {
+        padding: 0 20px 20px;
+    }
+
+    /* Tin Tức - Mobile */
+    .section-news {
+        display: block;
+    }
+
+    .card .news-img {
+        height: 200px;
+    }
+
+    /* choose us - Mobile*/
+    .content-right {
+        margin-left: 0px;
+        margin-top: 20px;
+    }
+
+    .section-choose {
+        padding: 0 20px 40px;
+    }
+
+    /* Footer - Mobile*/
+    .footer {
+        padding: 30px 0 0;
+    }
+
+    .footer__upper {
+        margin: 0 20px;
+    }
+
+    .networks {
+        justify-content: center;
+    }
+
+    .footer-map {
+        width: 100%;
+        height: 300px;
+    }
+
+    /* Back to top */
+    .back-to-top {
+        display: none;
+    }
+}
