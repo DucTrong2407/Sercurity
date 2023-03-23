@@ -366,7 +366,7 @@
 
 .section-about {
     position: relative;
-    background-image: url(/assets/img/cong-bao-ve-1.png) !important;
+    background-image: url(http://webportal.vienthongtayninh.vn:9999/wp-content/uploads/2022/12/kcnchala.png);
     background-position: 60% 72%;
     background-size: cover;
 }
@@ -575,7 +575,7 @@
 
 /* Footer */
 .footer {
-    background-image: url(/assets/img/footer.jpg) !important;
+    background-image: url(http://webportal.vienthongtayninh.vn:9999/wp-content/uploads/2022/12/siemens-mobility-visual-ecosystem.jpg);
 }
 
 .footer-fill {
