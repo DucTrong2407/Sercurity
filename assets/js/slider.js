@@ -46,6 +46,37 @@ var swiper = new Swiper(".slide-container", {
     },
 });
 
+var swiper = new Swiper(".slide-work", {
+    slidesPerView: 4,
+    spaceBetween: 10,
+    sliderPerGroup: 4,
+    loop: true,
+    centerSlide: "true",
+    fade: "true",
+    grabCursor: "true",
+    pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+        dynamicBullets: true,
+    },
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+    },
+
+    breakpoints: {
+        414: {
+            slidesPerView: 1,
+        },
+        768: {
+            slidesPerView: 2,
+        },
+        1000: {
+            slidesPerView: 4,
+        },
+    },
+});
+
 const imgs = document.querySelectorAll(".slider-img");
 const imgsiPhone = document.querySelectorAll(".slider-img-iPhone");
 // img Trang chủ

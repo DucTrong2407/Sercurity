@@ -5,11 +5,10 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Trang chủ - Dịch vụ bảo vệ Nguyên Sang</title>
-        <!-- Link Reset Css -->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
         <!-- Link Swiper's CSS -->
         <link rel="stylesheet" href="./assets/css/swiper-bundle.min.css" />
         <!-- CSS -->
+        <link rel="stylesheet" href="./assets/css/reset.css" />
         <link rel="stylesheet" href="./assets/css/grid.css" />
         <link rel="stylesheet" href="./assets/css/base.css" />
         <link rel="stylesheet" href="./assets/css/main.css" />
@@ -18,14 +17,11 @@
 
         <!-- Link Font awesome -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <!-- Link Fonts Google -->
-        <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Poppins:wght@300;400;500;600;700&family=Quicksand:wght@500;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet" />
     </head>
     <body>
         <div class="wrapper">
-            <!-- Header -->
             <header class="header">
-                <nav class="header__navbar">
+                <div class="header__navbar">
                     <!-- Navbar Mobile -->
                     <div class="burger">
                         <div class="line1"></div>
@@ -70,7 +66,7 @@
                             <span>0276 381 1234</span>
                         </a>
                     </div>
-                </nav>
+                </div>
             </header>
 
             <div class="main">
@@ -90,7 +86,7 @@
                     </div>
                     <div class="swiper-button-next slide-btn"></div>
                     <div class="swiper-button-prev slide-btn"></div>
-                    <div class="swiper-pagination"></div>
+                    <div class="swiper-pagination slide-pagi"></div>
                 </div>
 
                 <!-- Services -->
@@ -101,15 +97,17 @@
                             <div class="col l-12 m-12 c-12">
                                 <div class="service-heading">
                                     <h3 class="service-heading__title">DỊCH VỤ CUNG CẤP</h3>
-                                    <span class="service-heading__text"> Tại ANS, chúng tôi cung cấp dịch vụ chất lượng như:</span>
+                                    <span class="service-heading__text"> Tại ANS, chúng tôi cung cấp các dịch vụ chất lượng như:</span>
                                 </div>
                             </div>
                         </div>
                         <div class="row">
-                            <div class="col l-4 m-4 c-12">
+                            <div class="col l-4 m-4 c-12 service-border">
                                 <div class="service-list">
-                                    <div class="service-img">
-                                        <img src="./assets/img/hinhanh_baove1.png" alt="" />
+                                    <div class="service-img" style="border-radius: 50%; width: 57.4%">
+                                        <div class="img__zoom img-cover" style="padding-top: 100%">
+                                            <img src="./assets/img/hinhanh_baove1.png" width="540" height="465" alt="" />
+                                        </div>
                                     </div>
                                     <div class="service-text">
                                         <h4 class="service-text__name">Dịch vụ vệ sĩ, bảo vệ an toàn</h4>
@@ -117,10 +115,12 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col l-4 m-4 c-12">
+                            <div class="col l-4 m-4 c-12 service-border">
                                 <div class="service-list">
-                                    <div class="service-img">
-                                        <img src="./assets/img/Nghiep-vu-cua-tham-tu-dieu-tra-ngoai-tinh-1.png" alt="" />
+                                    <div class="service-img" style="border-radius: 50%; width: 57.4%">
+                                        <div class="img__zoom img-cover" style="padding-top: 100%">
+                                            <img src="./assets/img/Nghiep-vu-cua-tham-tu-dieu-tra-ngoai-tinh-1.png" alt="" />
+                                        </div>
                                     </div>
                                     <div class="service-text">
                                         <h4 class="service-text__name">Dịch vụ điều tra và thám tử</h4>
@@ -128,10 +128,12 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col l-4 m-4 c-12">
+                            <div class="col l-4 m-4 c-12 service-border">
                                 <div class="service-list">
-                                    <div class="service-img">
-                                        <img src="./assets/img/giamsat.png" alt="" />
+                                    <div class="service-img" style="border-radius: 50%; width: 57.4%">
+                                        <div class="img__zoom img-cover" style="padding-top: 100%">
+                                            <img src="./assets/img/giamsat.png" alt="" />
+                                        </div>
                                     </div>
                                     <div class="service-text">
                                         <h4 class="service-text__name">Dịch vụ giám sát, giám sát từ xa</h4>
@@ -144,9 +146,8 @@
                 </div>
 
                 <!-- About -->
-                <div class="section-about mt-80">
+                <div class="section-about fill mt-80">
                     <div class="about-fill">
-                        <div class="gap-element"></div>
                         <div class="grid wide">
                             <div class="row">
                                 <div class="col l-6 m-6 c-12">
@@ -173,7 +174,6 @@
                 <!-- Tin Tức -->
                 <div class="section-news">
                     <div class="section-content">
-                        <div class="gap-element"></div>
                         <div class="grid wide">
                             <div class="row">
                                 <div class="col l-12 m-12 c-12">
@@ -243,7 +243,6 @@
 
                 <!-- Choose Us -->
                 <div class="section-choose">
-                    <div class="gap-element"></div>
                     <div class="grid wide">
                         <div class="row">
                             <div class="col l-12 m-12 c-12">
@@ -253,12 +252,12 @@
                             </div>
                         </div>
                         <div class="row">
-                            <div class="col l-6 m-6 c-12">
+                            <div class="col l-6 m-6 c-12" style="padding-right: 10px">
                                 <div class="content-left">
                                     <p class="content-left__text"><span>ANS</span> cung cấp dịch vụ an ninh chuyên sâu: vệ sỹ và bảo vệ an toàn; điều tra và thám tử; giám sát và giám sát từ xa. Trong suốt qua trình phát triển, ANS luôn khẳng định thương hiệu của mình bằng chất lượng dịch vụ. Với đội ngũ cán bộ quản lý chủ chốt xuất thân là điều tra viên, trinh sát hình sự có nhiều năm kinh nghiệm trong phòng chống tội phạm và bảo vệ an ninh, lực lượng nhân viên đã qua đào tạo nghiệp vụ chuyên sâu, được trang bị các trang thiết bị, công cụ hỗ trợ hiện đại ANS luôn tự tin cung cấp dịch vụ An ninh tốt nhất cho Quý khách.</p>
                                 </div>
                             </div>
-                            <div class="col l-6 m-6 c-12">
+                            <div class="col l-6 m-6 c-12" style="padding-left: 20px">
                                 <div class="content-right">
                                     <ul class="content-right__list">
                                         <li class="content-right__item">
@@ -288,17 +287,16 @@
 
                 <!-- Work -->
                 <div class="section-hoatdong">
-                    <div class="gap-element"></div>
                     <div class="grid wide">
                         <div class="row">
                             <div class="col l-12 m-12 c-12">
-                                <div class="news-heading">
+                                <div class="news-heading news-work">
                                     <h2 class="news-title">Hình ảnh hoạt động công ty</h2>
                                 </div>
                             </div>
                         </div>
                         <div class="container swiper">
-                            <div class="slide-container">
+                            <div class="slide-work">
                                 <div class="card-wrapper swiper-wrapper">
                                     <div class="card swiper-slide">
                                         <div class="news-img__action">
@@ -350,32 +348,13 @@
                                         </li>
                                         <li class="footer-item">
                                             <i class="footer-item__icon fa-solid fa-phone"></i>
-                                            <p class="footer-item__title">Điện thoại: <a href="tel:+84911229957" class="footer-item__tel">0911 22 99 57</a> – <a href="+842763811234" class="footer-item__tel">0276 381 1234</a></p>
+                                            <p class="footer-item__title">Điện thoại: 0911 22 99 57 - 0276 381 1234</p>
                                         </li>
                                         <li class="footer-item">
                                             <i class="footer-item__icon fa-solid fa-envelope-open"></i>
-                                            <p class="footer-item__title">Email: <a href="mailto:baovepsg286@gmail.com" class="footer-item__tel">baovepsg286@gmail.com</a></p>
+                                            <p class="footer-item__title">Email: baovepsg286@gmail.com</p>
                                         </li>
                                     </ul>
-                                    <!-- <div class="footer-follow__socials">
-                                        <ul class="networks">
-                                            <li class="facebook">
-                                                <a href="https://www.facebook.com/anninhnguyensang/" class="">
-                                                    <img src="./assets/img/facebook.png" alt="" />
-                                                </a>
-                                            </li>
-                                            <li class="zalo">
-                                                <a href="https://zalo.me/0911229957" class="">
-                                                    <img src="./assets/img/zalo.png" alt="" />
-                                                </a>
-                                            </li>
-                                            <li class="messenger">
-                                                <a href="https://m.me/anninhnguyensang" class="">
-                                                    <img src="./assets/img/messenger.png" alt="" />
-                                                </a>
-                                            </li>
-                                        </ul>
-                                    </div> -->
                                 </div>
 
                                 <div class="col l-4 m-4 c-12">
@@ -432,14 +411,16 @@
 
             // Navbar-tablet-mobile
             modalMenu = document.querySelector(".modal-menu");
-            bars = document.querySelector(".burger");
+            burgerOpen = document.querySelector(".burger");
             burgerClose = document.querySelector(".burger-close");
             headerMenu = document.querySelector(".header__menu");
+            body = document.querySelector("body");
 
             // Hàm hiển thị Modal navbar mobile
-            bars.onclick = function () {
+            burgerOpen.addEventListener("click", function () {
                 modalMenu.classList.toggle("active");
-            };
+                body.classList.toggle("no-scroll");
+            });
 
             //Nghe hành vi click vào nút Close
             modalMenu.onclick = function () {

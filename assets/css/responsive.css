@@ -19,9 +19,21 @@
     .burger div {
         width: 22px;
         height: 1px;
-        background-color: var(--header-color);
+        background-color: #000;
         margin: 6px 20px;
         transition: all 0.3s ease;
+    }
+
+    .toggle .line1 {
+        transform: rotate(-45deg) translate(-4px, 6px);
+    }
+
+    .toggle .line2 {
+        opacity: 0;
+    }
+
+    .toggle .line3 {
+        transform: rotate(45deg) translate(-4px, -6px);
     }
 
     .modal-menu {
@@ -34,6 +46,7 @@
         transition: all 0.2s ease;
         z-index: 1042;
         display: none;
+        overflow: hidden;
     }
 
     .modal-menu.active {
@@ -124,12 +137,13 @@
     .header__menu-link {
         padding: 15px 0 15px 20px;
         font-size: 14px;
-        font-weight: 500;
+        font-weight: 700;
         color: rgba(102, 102, 102, 0.85);
     }
 
     .header__menu-list > .header__menu-item > .header__menu-link:hover {
         color: rgba(17, 17, 17, 0.85);
+        background-color: #ececec;
     }
 
     /* Service */
