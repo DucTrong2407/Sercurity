@@ -38,7 +38,7 @@ var swiper = new Swiper(".slide-container", {
             slidesPerView: 1,
         },
         768: {
-            slidesPerView: 2,
+            slidesPerView: 1,
         },
         1000: {
             slidesPerView: 4,
@@ -69,7 +69,7 @@ var swiper = new Swiper(".slide-work", {
             slidesPerView: 1,
         },
         768: {
-            slidesPerView: 2,
+            slidesPerView: 3,
         },
         1000: {
             slidesPerView: 4,

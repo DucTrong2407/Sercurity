@@ -159,10 +159,6 @@
         padding: 12px 0;
     }
 
-    .service-text__title {
-        line-height: 19px;
-    }
-
     /* Tin Tức */
     .swiper-navBtn {
         display: none;
@@ -211,23 +207,19 @@
     }
 
     /* About - Tablet*/
-    .about-content {
-        padding: 0 30px 30px 0;
-    }
-
-    .about-img {
-    }
 
     .about-img > img {
-        height: 505px;
-        object-fit: cover;
+        margin-top: 112px;
     }
 
     /* Tin Tức - Tablet*/
+    .card .news-img {
+        height: 415.13px;
+    }
 
     /* Footer - Tablet*/
     .footer__upper {
-        margin: 0 30px;
+        margin: 0 20px;
         padding-bottom: 0;
     }
 
@@ -270,10 +262,35 @@
         padding: 0;
     }
 
+    .service-heading__title {
+        font-size: 18px;
+    }
+
+    .service-text__name {
+        font-size: 16px;
+    }
+
+    .service-border {
+        margin-bottom: 40px;
+    }
+
+    .service-border:last-child {
+        margin-bottom: 0;
+    }
+
     /* About - Mobile*/
     .about-content {
         padding: 0 20px 50px;
     }
+
+    .about-content__title {
+        font-size: 18px;
+    }
+
+    .about-content__text {
+        font-size: 16px;
+    }
+
     .about-content__btn {
         padding: 16px 10px;
     }
